@@ -1,0 +1,27 @@
+{
+    "name": "collection-js",
+    "version": "1.0.0",
+    "description": "Create Collections",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "build:watch": "tsc --watch",
+        "publish": "node ./scripts/publish-github.js && npm publish"
+    },
+    "devDependencies": {
+        "typescript": "^4.6.2"
+    },
+    "repository": {
+        "url": "https://github.com/Taimoor-Tariq/collection-js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Taimoor-Tariq/collection-js/issues"
+    },
+    "homepage": "https://github.com/Taimoor-Tariq/collection-js",
+    "files": [
+        "dist/**/*"
+    ],
+    "prepare": "yarn run build",
+    "types": "dist/index.d.ts"
+}

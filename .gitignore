@@ -1,5 +1,4 @@
 .vscode
 .npmrc
 node_modules
-scripts
 test

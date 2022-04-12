@@ -1,5 +1,5 @@
 {
-    "name": "collection-js",
+    "name": "@Taimoor-Tariq/collection-js",
     "version": "1.0.0",
     "description": "Create Collections",
     "main": "dist/index.js",
@@ -7,13 +7,13 @@
     "scripts": {
         "build": "tsc",
         "build:watch": "tsc --watch",
-        "publish": "node ./scripts/publish-github.js && npm publish"
+        "publish": "npm publish"
     },
     "devDependencies": {
         "typescript": "^4.6.2"
     },
     "repository": {
-        "url": "https://github.com/Taimoor-Tariq/collection-js.git"
+        "url": "git://github.com/Taimoor-Tariq/collection-js.git"
     },
     "bugs": {
         "url": "https://github.com/Taimoor-Tariq/collection-js/issues"
@@ -23,5 +23,8 @@
         "dist/**/*"
     ],
     "prepare": "yarn run build",
-    "types": "dist/index.d.ts"
+    "types": "dist/index.d.ts",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    }
 }
